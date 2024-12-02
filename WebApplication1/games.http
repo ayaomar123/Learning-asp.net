@@ -1,0 +1,29 @@
+GET http://localhost:5132/games
+
+###
+GET http://localhost:5132/games/6
+
+###
+
+POST http://localhost:5132/games
+Content-Type: application/json
+
+{
+    "genre": "test",
+    "price": 14,
+    "releaseDate": "1998-02-09"
+}
+
+###
+PUT  http://localhost:5132/games/6
+Content-Type: application/json
+
+{
+    "name": "aya-omar",
+    "genre": "test",
+    "price": 14,
+    "releaseDate": "1998-02-09"
+}
+
+###
+DELETE http://localhost:5132/games/1
