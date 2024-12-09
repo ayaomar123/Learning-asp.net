@@ -72,6 +72,7 @@ public static class GamesEndpoints
             {
                 return Results.NotFound(); // إذا لم يتم العثور على اللعبة، أرجع NotFound
             }
+            
             games[index] = new GameDto(
                id,
                updatedGame.Name,
